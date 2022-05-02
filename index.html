@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>RamenGo!</title>
+	<link rel="stylesheet" href="style.css" />
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="app.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-logo">
+			<img src="./assets/header/logo.svg" />
+		</div>
+		<div class="header-ilustration">
+			<img src="./assets/header/illustration.svg" />
+		</div>
+		<div class="header-info">
+			<div class="header-text">
+				<h2>ラーメン</h2>
+				<h1>GO!</h1>
+			</div>
+			<p>Enjoy a good ramen in the comfort of your house. Create your own ramen and
+				choose your favorite flavour combination!</p>
+			<div class="header-button hide-mobile">
+				<button>Order now
+					<img class="ml-30" width="20px" height="16px" src="./assets/icons/arrow-active.svg" />
+				</button>
+			</div>
+		</div>
+	</header>
+	<main id="main">
+		<div class="section-header">
+			<h1>First things first: select your favorite broth.</h1>
+			<p>It will give the whole flavor on your ramen soup.</p>
+		</div>
+		<div class="swiper mySwiper">
+			<div id="broth-swiper" class="swiper-wrapper"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="section-header">
+			<h1>It’s time to choose (or not) your meat!</h1>
+			<p>Some people love, some don’t. We have options for all tastes.</p>
+		</div>
+		<div class="swiper mySwiper">
+			<div id="meat-swiper" class="swiper-wrapper"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="button-wrapper">
+			<button id="place-order-btn" class="flex center-elements" onclick="placeOrder()" disabled>Place your order
+				<img class="ml-30" width="20px" height="16px" src="./assets/icons/arrow-disabled.svg" /></button>
+		</div>
+	</main>
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

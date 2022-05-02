@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>RamenGo!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="success.js" defer></script>
+</head>
+
+<body>
+    <div class="success-page">
+        <img class="logo-img" src="./assets/header/red-logo.svg" />
+        <div class="order-illustration">
+            <img id="ordered-item-image" />
+            <h6>Your order:</h6>
+            <h1 id="ordered-item-description">Shoyu and Karaague Ramen</h1>
+        </div>
+        <div class="order-status">
+            <img src="./assets/icons/bowing.svg" />
+            <h2>どもありがとうございます。</h2>
+            <h1>Your order is being prepared</h2>
+                <p>Hold on, when you least expect you will be eating your rámen. </p>
+                <button onclick="placeNewOrder()" class=''>Place new order
+                    <img class="ml-30" width="20px" height="16px" src="./assets/icons/arrow-active.svg" />
+                </button>
+        </div>
+    </div>
+</body>
+
+</html>
